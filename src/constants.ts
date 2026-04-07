@@ -52,7 +52,10 @@ export const Blockchain: { [k: string]: string } = {
   NoChain: '',
   ReadOnly: 'readonly',
   Base: 'base',
-  Bnb: 'bnb'
+  Bnb: 'bnb',
+
+  Adi: 'adi'
+
 };
 
 export const NetworkId: { [k: string]: string } = {
@@ -65,7 +68,10 @@ export const NetworkId: { [k: string]: string } = {
   Cardona: 'cardona',
   Test: 'test',
   Unknown: 'unknown',
-  NoNetwork: ''
+  NoNetwork: '',
+
+  AdiTestnet: 'adiTestnet'
+
 };
 
 export const DidMethod: { [k: string]: string } = {
@@ -96,7 +102,9 @@ export const ChainIds: { [key: string]: number } = {
   [`${Blockchain.Base}:${NetworkId.Main}`]: 8453,
   [`${Blockchain.Base}:${NetworkId.Sepolia}`]: 84532,
   [`${Blockchain.Bnb}:${NetworkId.Main}`]: 56,
-  [`${Blockchain.Bnb}:${NetworkId.Test}`]: 97
+  [`${Blockchain.Bnb}:${NetworkId.Test}`]: 97,
+  [`${Blockchain.Adi}:${NetworkId.AdiTestnet}`]: 99999
+
 };
 
 export const DidMethodByte: { [key: string]: number } = {
@@ -124,7 +132,8 @@ const blockchainNetworkMap = {
   [`${Blockchain.Base}:${NetworkId.Main}`]: 0b0101_0000 | 0b0000_0001,
   [`${Blockchain.Base}:${NetworkId.Sepolia}`]: 0b0101_0000 | 0b0000_0010,
   [`${Blockchain.Bnb}:${NetworkId.Main}`]: 0b0110_0000 | 0b0000_0001,
-  [`${Blockchain.Bnb}:${NetworkId.Test}`]: 0b0110_0000 | 0b0000_0010
+  [`${Blockchain.Bnb}:${NetworkId.Test}`]: 0b0110_0000 | 0b0000_0010,
+  [`${Blockchain.Adi}:${NetworkId.AdiTestnet}`]: 249
 };
 
 // DIDMethodNetwork is map for did methods and their blockchain networks

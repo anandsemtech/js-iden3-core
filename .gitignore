@@ -4,3 +4,6 @@ dist
 .DS_Store
 .idea
 .vscode
+
+# Package tarballs
+*.tgz
